@@ -4,6 +4,8 @@
  * print_to_98 - prints all the values between input
  * value n and 98
  *
+ * @n: interger data type
+ *
  * Return: Nothing lol
  */
 void print_to_98(int n)
