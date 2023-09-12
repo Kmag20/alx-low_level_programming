@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * add - Takes two integers from arguments and adds them 
+ * add - Takes two integers from arguments and adds them
  * together
  *
  * @a: number one.
