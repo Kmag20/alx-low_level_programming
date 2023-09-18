@@ -3,8 +3,8 @@
 /**
  * swap_int - swaps the two interger given in parameters
  *
- * @*a - pointer to int a
- * @*b - pointer to int b
+ * @a: - pointer to int a
+ * @b: - pointer to int b
  *
  * Return : void
  */
