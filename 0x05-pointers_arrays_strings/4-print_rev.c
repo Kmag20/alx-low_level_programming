@@ -10,12 +10,15 @@ int _strlen(char *s);
 void print_rev(char *s)
 {
 	int numchar;
+	int j;
+	int len;
 
         for (numchar = 0; *s != '\0'; s++)
         {
                 numchar++;
         }
-	int j, len = numchar;
+	len = numchar;
+	
 
 	for (j = len; j >= 1; j--)
 	{
