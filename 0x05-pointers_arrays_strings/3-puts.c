@@ -3,7 +3,7 @@
 /**
  * _puts - prints a character on screen followed by a newline
  *
- * @str: a string 
+ * @str: a string
  *
  * Return: void
  */
