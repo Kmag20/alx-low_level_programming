@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _memset - fill memory space woth constant byte
+ * _memset - fill memory space with constant byte
  *
  * @s: memory space
  * @b: constant byte
- * @n: number of characters/bytes 
+ * @n: number of characters/bytes
  *
  * Return: pointer to s
  */
