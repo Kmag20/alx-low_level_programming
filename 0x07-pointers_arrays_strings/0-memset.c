@@ -7,11 +7,11 @@
  * @b: character to or constatn bytes 
  * @n: number of bytes
  *
- * Return - pointer to s
+ * Return: pointer to s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	int i;
+	unisigned int i;
 
 	for (i = 0; i < n; i++)
 	{
