@@ -9,7 +9,7 @@
  *
  * Return - pointer to s
  */
-char *memset(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 	int i;
 
@@ -19,5 +19,5 @@ char *memset(char *s, char b, unsigned int n)
 	}
 	s[i + 1] = '\0';
 
-	return s;
+	return (s);
 }
