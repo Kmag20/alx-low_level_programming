@@ -9,11 +9,11 @@
   */
 unsigned int _strspn(char *s, char *accept)
 {
-	int i, j, cnt = 0, found_match = 0;
+	unsigned int i, j, cnt = 0, found_match = 0;
         
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		found _match = 0;
+		found_match = 0;
 		for (j = 0; j < accept[j] != '\0'; j++)
 		{
 			if (accept[j] == s[i])
