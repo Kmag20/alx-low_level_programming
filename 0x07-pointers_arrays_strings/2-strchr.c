@@ -4,7 +4,7 @@
  * _strchr - pointer to the first occurrence of char c in string s
  *
  * @s:string
- * @c: character 
+ * @c: character
  *
  * Return: pointer to s
  */
