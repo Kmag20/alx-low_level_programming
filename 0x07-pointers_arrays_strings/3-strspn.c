@@ -1,4 +1,4 @@
-#include "mainn.h"
+#include "main.h"
 
 /**
   * _strspn - search a string for a set of bytes
@@ -9,24 +9,21 @@
   */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int a = 0, b, t = 0;
-
-	while (accept[a])
+	int i, j, cnt = 0, found_match = 0;
+        
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		b = 0;
-
-		while (s[b] != 32)
+		found _match = 0;
+		for (j = 0; j < accept[j] != '\0'; j++)
 		{
-			if (accept[a] == s[b])
-			{
-				t++;
-			}
-
-			b++;
+			if (accept[j] == s[i])
+				found_match = 1;
+				break;
 		}
-
-		a++;
+		if (!(found_match) break;
+		cnt++;
 	}
 
-	return (t);
+
+	return (cnt);
 }
