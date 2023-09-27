@@ -7,10 +7,10 @@
  *
  * Return: length of a string
  */
+int cnt = 0;
+
 int _strlen_recursion(char *s)
 {
-	int cnt = 0;
-
 	if (*s != '\0')
 	{
 		cnt++;
