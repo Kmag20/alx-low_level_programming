@@ -5,7 +5,7 @@
  *
  * @s: string
  *
- * Return: length of a string
+ * Return: int 
  */
 int cnt = 0;
 
