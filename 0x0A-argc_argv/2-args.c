@@ -3,10 +3,10 @@
 /**
  * main - prints arguments received
  *
- * @argc - argument count
- * @argv - argument vector
+ * @argc: argument count
+ * @argv: argument vector
  *
- * Return: 0 on succes
+ * Return: 0 on success
  */
 int main(int argc, char *argv[])
 {
