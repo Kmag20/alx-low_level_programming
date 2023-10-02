@@ -4,7 +4,7 @@
 /**
  * _strdup - copies str to a dynamically allocated space
  *
- * @str - string
+ * @str: string
  *
  * Return: pointer
  */
@@ -20,12 +20,16 @@ char *_strdup(char *str)
 	{
 		i++;
 	}
-	ch = malloc(sizeof(char) * i);
+	ch = malloc((sizeof(char) * i) + 1);
+
+	if (ch == NULL)
+		return (NULL);
 
 	for (n = 0; n < i; n++)
 	{
 		ch[n] = str[n];
 	}
+	ch[++i] = '\0';
 
 	return (ch);
 }
