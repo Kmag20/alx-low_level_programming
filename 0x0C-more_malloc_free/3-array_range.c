@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * array_range - creates an array o integers
@@ -12,7 +13,7 @@
  */
 int *array_range(int min, int max)
 {
-	int len = max - min;
+	int len = (max - min) + 1;
 	int i;
 	int *ptr;
 
@@ -23,7 +24,7 @@ int *array_range(int min, int max)
 	if (ptr == NULL)
 		return (NULL);
 
-	for (i = 0; i <= len; i++)
+	for (i = 0; i < len; i++)
 	       p[i] = min + i;	
 
 	return (p);
