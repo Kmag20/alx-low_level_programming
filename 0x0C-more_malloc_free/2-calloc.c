@@ -11,7 +11,7 @@
  * if nmeb | size is zero return NULL
  * if malloc fails return NULL also
  */
-void *calloc(unsigned int nmemb, unsigned int size)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *ptr;
 	unsigned int j;
