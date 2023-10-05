@@ -1,7 +1,8 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
- * malloc_checked - checks whether malloc works well 
+ * malloc_checked - checks whether malloc works well
  *
  * @b: bytes
  *
