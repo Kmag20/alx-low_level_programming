@@ -7,17 +7,15 @@
  */
 size_t print_list(const list_t *h)
 {
-	list_t *t;
 	size_t cnt;
 
-	t = h;
-	while (t != NULL)
-		if (t->str == NULL)
+	while (h != NULL)
+		if (h->str == NULL)
 			printf("[%i] %s\n", 0, (nil));
 		else
-			printf("[%%] %s\n", t->len, t->str);
+			printf("[%%] %s\n", h->len, h->str);
 
-		t = t->next;
+		h = h->next;
 		cnt++;
 	return (cnt);
 }
