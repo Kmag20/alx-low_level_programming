@@ -2,10 +2,10 @@
 
 CC := gcc
 
-SRC := school.c
+SRC := school.c main.c
 BIN := school
 
 all: $(BIN)
 
-$(BIN): $(SRC)
-	$(CC) main.c $(SRC) -o $(BIN)
+$(BIN): school.c
+	$(CC) $(SRC) -o $(BIN)
