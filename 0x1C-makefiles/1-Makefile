@@ -1,0 +1,10 @@
+.PHONY: all
+
+SRC := school.c
+HSRC := main.c
+BIN := school
+
+all: $(BIN)
+
+$(BIN): $(SRC) $(HSRC)
+	$(CC) $(HSRC) $(SRC) -o $(BIN)
