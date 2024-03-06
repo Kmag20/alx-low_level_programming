@@ -33,16 +33,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	item->next = NULL;
 
 	index = key_index((unsigned char *)key, ht->size);
-	if (!ht->array[index])
-	{
-		ht->array[index] = item;
-	}
-	else
-	{
-		current = ht->array[index];
-		item->next = current;
-		ht->array[index] = item;
-	}
+	if (ht == NULL)
+		return (0);
+
+	ht->array[index] = item;
 
 	return (1);
 }
