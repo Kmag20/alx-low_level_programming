@@ -12,17 +12,21 @@
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	unsigned long int index;
+	hash_node_t *node;
 
 	if (ht == NULL || *key == '\0')
 		return (NULL);
 
 	index = key_index((unsigned char *)key, ht->size);
-	if (ht->array[index])
+
+	node = ht->array[index];
+	while (node)
 	{
-		if (strcmp(ht->array[index]->key, key) == 0)
+		if (strcmp(node->key, key) == 0)
 		{
-			return (ht->array[index]->value);
+			return (node->value);
 		}
+		node = node->next;
 	}
 	return (NULL);
 }
