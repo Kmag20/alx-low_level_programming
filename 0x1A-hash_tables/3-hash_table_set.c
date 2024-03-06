@@ -13,7 +13,6 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *item;
-	hash_node_t *current;
 	unsigned long int index;
 
 	item = malloc(sizeof(hash_node_t));
