@@ -29,8 +29,10 @@ int compar(const int *a, const int b, int *array)
 */
 void search_list(int left, int right, int *array)
 {
+	int i;
+
 	printf("Searching in array: ");
-	for (int i = left; i <= right; ++i)
+	for  (i = left; i <= right; ++i)
 	{
 		printf("%d", array[i]);
 		if (i < right)
