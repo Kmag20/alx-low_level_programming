@@ -1,5 +1,7 @@
 #include <stdio.h>
-#include "search_algos.h"
+#include <stdlib.h>
+#include <math.h>
+
 
 /**
  * jump_search - uses a binary search algo
@@ -12,37 +14,32 @@
  */
 int jump_search(int *array, size_t size, int value)
 {
-        size_t start, end, i;
+	size_t start, end, i;
 
-        if (array == NULL)
-                return (-1);
+	if (array == NULL)
+		return (-1);
 
-        start = 0;
-        end = sqrt(size - 1);
-        printf("Value cheched array[%lu] = [%lu]\n", start, start);
+	start = 0;
+	end = sqrt(size - 1);
+	printf("Value checked array[%lu] = [%lu]\n", start, end);
 
-        while (array[end] < value)
-        {
-                start = end;
-                end = end + sqrt(size - 1);
-                printf("Value cheched array[%lu] = [%lu]\n", start, start);
-                if (end > size)
-                {
-                        //end = end + sqrt(size);
-                        break;
-                }
+	while (array[end] < value)
+	{
+		start = end;
+		end = end + sqrt(size - 1);
+		printf("Value checked array[%lu] = [%lu]\n", start, end);
+		if (end > size)
+			break;
+	}
 
-        }
+	printf("Value found between indexed [%lu] and [%lu]\n",
+			start, end);
 
-        printf("Value found between indexes [%lu] and [%lu]\n",
-                                start, end);
+	for (i = start, i <= end; ++i)
+	{
+		if (array[i] == value)
+			return (i);
+	}
 
-        for (i = start; i <= end; ++i)
-        {
-                if (array[i] == value)
-                {
-                        return (i);
-                }
-        }
-        return (-1);
+	return (-1);
 }
