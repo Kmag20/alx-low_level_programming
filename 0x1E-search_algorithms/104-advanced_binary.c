@@ -44,7 +44,7 @@ void search_list(int left, int right, int *array)
 }
 
 /**
- * advanced_search - returns the index of the first value in 
+ * advanced_binary - returns the index of the first value in 
  * the array
  *
  * @array: pointer to the first element of the array
@@ -54,7 +54,7 @@ void search_list(int left, int right, int *array)
  * Return: Index to where value is located
  * if value is not present in array OR array is NULL return -1
  */
-int advanced_search(int *array, size_t size, int value)
+int advanced_binary(int *array, size_t size, int value)
 {
 	int left, right, midpoint, comparison;
 
